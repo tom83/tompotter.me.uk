@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
+  },
+  "name": "tompotter-me-uk",
+  "version": "1.0.0",
+  "description": "Tom Potter's personal website",
+  "main": "index.php",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Potter",
+  "license": "ISC"
+}
