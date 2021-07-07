@@ -13,7 +13,7 @@ function css(cb: () => void) {
     .pipe(sourcemaps.init())
     .pipe(postcss([require('tailwindcss'), require('autoprefixer')]))
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('build/'));
+    .pipe(dest('assets/'));
 
   cb();
 }
