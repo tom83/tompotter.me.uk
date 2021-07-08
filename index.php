@@ -14,6 +14,9 @@
     <title>Welcome!</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis:300&display=swap" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
+    <link rel="icon"
+      type="image/png"
+      href="assets/favicon.ico">
 </head>
 <body class="grid sm:grid-cols-2 bg-gray-300 justify-center items-center">
     <img src="/assets/coffee.png"
