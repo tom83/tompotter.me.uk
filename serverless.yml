@@ -7,6 +7,7 @@ provider:
 
 plugins:
     - ./vendor/bref/bref
+    - serverless-s3-sync
 
 functions:
     api:
@@ -125,3 +126,13 @@ resources:
                         # See https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ViewerCertificate.html
                         SslSupportMethod: 'sni-only'
                         MinimumProtocolVersion: TLSv1.1_2016
+custom:
+  s3Sync:
+    - bucketName: one.tompotter.me.uk # required
+      bucketPrefix: assets/ # optional
+      localDir: assets # required
+      params: # optional
+        - styles.css:
+            ContentType: 'text/css; charset=utf-8'
+        - "*":
+            CacheControl: 'max-age=31536000, immutable'
